@@ -116,6 +116,6 @@ After you have mode your changes, you can build the client by typing
 npm run build
 ```
 
-The compiled code will be found in the newly create /dist/ folder
+The compiled code will be found in the newly created /dist/ folder
 
 Enjoy !
