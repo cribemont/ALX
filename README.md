@@ -1,7 +1,10 @@
 # ALX Assignment
 
 This assignment is composed of the React SPA as well as a quick Node/Express server to mimic a basic API behavior.
+
 It was created with create-react-app and designed with the help of react-bootstrap
+
+It was built with Babel/Webpack
 
 ## Installation
 
@@ -21,7 +24,11 @@ node apiserver.js
 
 The Node/Express fake API should now be running on port 3000
 
-You can check by opening your browser and navigating to http://localhost:3000
+You can check by opening your browser and navigating to http://localhost:3000 and you should see
+
+```bash
+Node / Express API is here
+```
 
 ## Adding some data
 
@@ -78,6 +85,10 @@ npm run dev
 ```
 
 To check the SPA, open your browser if the dev command doesn't do it for you and go to http://localhost:8080
+
+If you click on "Activate bonus" you should see the button change, and if you refresh your page, state should be here.
+
+Note that if you stop the Node/Express server those changes will be lost as its only a PoC with an API running behind
 
 ## Customising the application
 
