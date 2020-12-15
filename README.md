@@ -10,6 +10,10 @@ It was built with Babel/Webpack
 
 Clone the repository on your local machine
 
+```bash
+git clone https://github.com/cribemont/ALX.git
+```
+
 ## Running the server
 
 As the server side is used to mimick an API, we fetch the date from the server in the client.
@@ -18,7 +22,7 @@ You need to run the server before running the client to be sure you'll see up to
 Open a terminal in the root folder of the project and type :
 
 ```bash
-cd server
+cd ALX/server
 node apiserver.js
 ```
 
@@ -74,7 +78,7 @@ let services = [
 To run the client, first you need to install its dependencies
 
 ```bash
-cd client/alx-promo-codes
+cd ALX/client/alx-promo-codes
 npm install
 ```
 
