@@ -22,6 +22,44 @@ The Node/Express fake API should now be running on port 3000
 
 You can check by opening your browser and navigating to http://localhost:3000
 
+## Adding some data
+
+If you want to add more services to the application, you can simple edit the main file apiserver.js and modify the services array
+
+```bash
+// Our fake item to store Services and statuses;
+let services = [
+    {
+        id: 1,
+        name: 'Siteconstructor.io',
+        description: 'Description',
+        promocode: 'itpromocode 2020 1',
+        activated: false,
+    },
+    {
+        id: 2,
+        name: 'Appvision.com',
+        description: 'Description',
+        promocode: 'itpromocode 2020 2',
+        activated: false,
+    },
+    {
+        id: 3,
+        name: 'Analytics.com',
+        description: 'Description',
+        promocode: 'itpromocode 2020 3',
+        activated: false,
+    },
+    {
+        id: 4,
+        name: 'Logotype',
+        description: 'Description',
+        promocode: 'itpromocode 2020 4',
+        activated: false,
+    },
+];
+```
+
 
 ## Running the client
 
@@ -39,6 +77,20 @@ npm run dev
 ```
 
 To check the SPA, open your browser if the dev command doesn't do it for you and go to http://localhost:8080
+
+## Customising the application
+
+You can customise a few aspects of the application style-wise.
+For this i have implemented a few root css variables you can quickly edit in /src/App.css
+
+```bash
+:root{
+  --spacing-base:2rem; // Basic guttering
+  --main-color:#262626; // The main text color
+  --sidebar-color:#1b1d29; // Sidebar color
+  --secondary-color:#7D7D7D; // Secondary text color
+}
+```
 
 ## Compiling the project
 
