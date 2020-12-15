@@ -1,6 +1,6 @@
 # ALX Assignment
 
-This assignment is composed of the React SPA as well as a quick Node/Express server to mimic a basic API behaviour
+This assignment is composed of the React SPA as well as a quick Node/Express server to mimic a basic API behavior.
 
 ## Installation
 
