@@ -42,6 +42,9 @@ let services = [
     },
 ];
 
+let balance = 213920;
+let payout = 159465;
+
 // Cors !
 app.use(cors());
 // Body parser middleware
@@ -68,6 +71,11 @@ app.post('/service/:id', (req, res) => {
             res.send(obj);
         }
     });
+})
+
+// Quick route to handle service activation
+app.get('/balance', (req, res) => {
+    res.json({'balance':balance, 'payout':payout});
 })
 
 // Let's ride !

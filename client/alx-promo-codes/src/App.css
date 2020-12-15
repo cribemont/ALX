@@ -150,6 +150,8 @@ p{
   padding:var(--spacing-base);
   min-height: calc(100vh - 80px) !important; 
   box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
 }
 .btn-reset-wrapper{
   margin-left:calc( var(--spacing-base) / 4 );
@@ -166,8 +168,8 @@ p{
 
 .footer{
   box-sizing:border-box;
-  position:absolute;
+  margin-top:auto;
   bottom:var(--spacing-base);
-  width:calc( 100% - calc(var(--spacing-base) * 2) );
+  width:100%;
   text-align:right;
 }

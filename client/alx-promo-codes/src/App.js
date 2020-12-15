@@ -19,8 +19,6 @@ import ServicesList from './components/ServicesList';
 // API service compo.
 import apiClient from './services/api';
 
-const balance = "213 920";
-const payout = "159 465";
 const currency = "$";
 
 const App = () => {
@@ -31,12 +29,28 @@ const App = () => {
   const [services, setServices] = useState(null);
   // State for getting services filtered
   const [filteredServices, setFilteredServices] = useState(null);
+  // State for getting balances
+  const [balance, setBalance] = useState(0);
+  const [payout, setPayout] = useState(0);
 
   // on Mount load services
   useEffect(() => {
     getServices();
+    getBalance();
   }, []);
 
+  // Get fake balance / payout from API
+  const getBalance = () => {
+    const url = '/balance';
+    apiClient.get(url)
+    .then(response => {
+      //console.log(response);
+      setBalance(response.data.balance);
+      setPayout(response.data.payout);
+    }).catch(error => {
+        console.log(error);
+    })
+}
 
   // Get the services list from the API
   const getServices = () => {
