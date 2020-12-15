@@ -1,6 +1,7 @@
 # ALX Assignment
 
 This assignment is composed of the React SPA as well as a quick Node/Express server to mimic a basic API behavior.
+It was created with create-react-app and designed with the help of react-bootstrap
 
 ## Installation
 
